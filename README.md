@@ -25,7 +25,7 @@ The source files are organized to facilitate the evaluation of these algorithms 
 
 The `tfhe` directory focuses on the implementation of the k-means and k-nearest neighbors (k-NN) algorithms using the TFHE scheme. The directory is further divided into the following subdirectories:
 
-- **kmeans**: Contains the source code and scripts related to the k-means clustering algorithm.
-- **knn**: Contains the source code and scripts related to the k-NN classification algorithm.
+- **k-Means**
+- **k-NN (k-nearest neighbors)**
 
 Each subdirectory contains the necessary source code, test scripts, and data files required to run and evaluate the algorithms.
