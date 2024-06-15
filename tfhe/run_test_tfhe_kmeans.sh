@@ -2,10 +2,10 @@
 
 ## plain
 # run plain kmeans
-#sh ./kmeans/plain/original/run_test_Kmeans_P.sh
+sh ./kmeans/plain/original/run_test_Kmeans_P.sh
 
 # run plain kernel kmeans
-#sh ./kmeans/plain/kernel/run_test_Kmeans_P.sh
+sh ./kmeans/plain/kernel/run_test_Kmeans_P.sh
 
 ## cipher
 # run original kmeans
