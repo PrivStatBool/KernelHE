@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains the source code for the research paper "Speed-up of Data Analysis with Kernel Trick in Encrypted Domain". The code is divided into two main parts: CKKS (arithmetic fHE) and TFHE (Boolean-based fHE), each addressing ML/STAT algorithms in the encrypted domain.
+This repository contains the source code for the research paper "Speed-up of Data Analysis with Kernel Trick in Encrypted Domain". The code is divided into two main parts: CKKS (arithmetic FHE) and TFHE (Boolean-based FHE), each addressing ML/STAT algorithms in the encrypted domain.
 
 ## Structure of the Repository
 
