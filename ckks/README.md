@@ -44,8 +44,8 @@ All generated datasets are located in their respective sections of the source co
 ### Prerequisites
 Before installing OpenFHE, ensure your system meets the following requirements:
 - C++ Compiler: A compiler supporting C++11 standards, such as g++ (version 5.2 or higher) or clang (version 3.8 or higher). This is necessary for compiling the core OpenFHE library.
-OpenFHE Installation
 
+#### OpenFHE Installation
 1. Install Compilers:
 ```sh
 sudo apt-get update
