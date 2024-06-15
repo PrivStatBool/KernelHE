@@ -2,9 +2,7 @@
 
 ## Dependencies
 
-To use the CKKS algorithms, you need to install the `OpenFHE` library. You can find the library and installation instructions here: [OpenFHE library](https://github.com/openfheorg/openfhe-development).
-
-If you prefer an installation guide for Ubuntu 20.04, refer to the end of this README file.
+To use the CKKS algorithms, you need to install the `OpenFHE` library. You can find the library and installation instructions here: [OpenFHE library](https://github.com/openfheorg/openfhe-development). If you prefer an installation guide for Ubuntu 20.04, refer to the end of this README file.
 
 ## After Installation
 
