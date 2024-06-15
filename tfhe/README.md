@@ -2,7 +2,7 @@
 
 ## Dependencies
 
-To use the TFHE algorithms, you need to install the TFHE library. You can find the library and installation instructions here: [TFHE library](https://tfhe.github.io/tfhe/).
+To use the TFHE algorithms, you need to install the 'tfhe' library. You can find the library and installation instructions here: [TFHE library](https://tfhe.github.io/tfhe/).
 
 If you prefer an installation guide for ubuntu 20.04, refer to the end of this README file.
 
@@ -43,7 +43,7 @@ All generated datasets are located in their respective sections of the folders (
 
 ## Prerequisites
 
-Before installing PrivStatBool and TFHE, ensure your system meets the following requirements:
+Before installing 'tfhe', ensure your system meets the following requirements:
 
 - **C++ Compiler:** A compiler supporting C++11 standards, such as g++ (version 5.2 or higher) or clang (version 3.8 or higher). This is necessary for compiling the core TFHE library.
 
@@ -59,7 +59,7 @@ Before installing PrivStatBool and TFHE, ensure your system meets the following 
    git clone https://github.com/tfhe/tfhe.git
 
 3. **Build TFHE:**
-- Navigate to the TFHE directory and build:
+- Navigate to the 'tfhe' directory and build:
    ```shell
   cd tfhe
   mkdir build && cd build
