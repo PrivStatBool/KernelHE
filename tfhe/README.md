@@ -4,6 +4,8 @@
 
 To use the TFHE algorithms, you need to install the TFHE library. You can find the library and installation instructions here: [TFHE library](https://tfhe.github.io/tfhe/).
 
+If you prefer an installation guide for ubuntu 20.04, refer to the end of this README file.
+
 ## After Installation
 
 ### Running k-Means Algorithms
@@ -36,3 +38,41 @@ sh (test_file_execution_script)
 
 ### Dataset
 All generated datasets are located in their respective sections of the folders (cipher and plain).
+
+### Installation Guide (Detailed Step for TFHE)
+
+## Prerequisites
+
+Before installing PrivStatBool and TFHE, ensure your system meets the following requirements:
+
+- **C++ Compiler:** A compiler supporting C++11 standards, such as g++ (version 5.2 or higher) or clang (version 3.8 or higher). This is necessary for compiling the core TFHE library.
+
+### TFHE Installation
+
+1. **Install Compilers:**
+   ```shell
+   sudo apt-get update
+   sudo apt-get install g++ clang
+
+2. **Clone TFHE:**
+   ```shell
+   git clone https://github.com/tfhe/tfhe.git
+
+3. **Build TFHE:**
+- Navigate to the TFHE directory and build:
+   ```shell
+  cd tfhe
+  mkdir build && cd build
+  ccmake ../src
+
+4. **Set Environment Variables:**
+- Add the following to ~/.bashrc (adjust TFHE_PREFIX if necessary):
+   ```shell
+  export C_INCLUDE_PATH=$C_INCLUDE_PATH:/usr/local/include
+  export CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:/usr/local/include
+  export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/lib
+  export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
+
+- Reload ~/.bashrc:
+   ```shell
+   source ~/.bashrc
