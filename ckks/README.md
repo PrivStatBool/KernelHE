@@ -2,38 +2,23 @@
 
 ## Dependencies
 
-To use the CKKS algorithms, you need to install the `OpenFHE` library. You can find the library and installation instructions here: [OpenFHE library](https://github.com/openfheorg/openfhe-development). If you prefer an installation guide for Ubuntu 20.04, refer to the end of this README file.
+To use the CKKS algorithms, you need to install the `OpenFHE` library **v.1.0.2**. You can find the library and installation instructions here: [OpenFHE library](https://github.com/openfheorg/openfhe-development). If you prefer an installation guide for Ubuntu 20.04, refer to the end of this README file.
 
-## After Installation
+### After Installation
 
-### Running Algorithms
+To run the source codes of ML/STAT algorithms using the OpenFHE library, follow these steps:
 
-To run all algorithms in the cipher and plain domains, navigate to the `ckks` directory and execute the following commands:
+1. **Navigate to the OpenFHE Development Folder:**
+   Ensure you are in the OpenFHE development directory where the library has been installed.
 
-1. **Create build directory**:
- ```
- mkdir build
- cd build
- ```
+2. **Replicate `CMakeLists.User.txt`:**
+   You need to replicate `CMakeLists.User.txt` into the target (ML/STAT) folder for execution. This file contains user-specific configurations required by CMake to build the project correctly.
 
-2. **Run CMake**:
-```sh
-cmake ..
-```
+3. **Run the Algorithms:**
+   Execute the ML/STAT algorithms by navigating to the respective directories and using CMake to build and run the code. 
 
-3. **Build the project**:
-```sh
-make
-```
+For detailed instructions on how to run the openfhe, refer to the [OpenFHE library documentation](https://github.com/openfheorg/openfhe-development).
 
-This will build the executables for both the kernel approach and the general approach in both the cipher and plain domains.
-
-### Separate Execution
-- If you want to run the kernel and general approaches separately in either the cipher or plain domains, navigate to the specific directory and execute the appropriate test script. For example:
-```sh
-cd build/plain/distance
-./distance
-```
 
 ### Dataset
 All generated datasets are located in their respective sections of the source codes (cipher and plain).
